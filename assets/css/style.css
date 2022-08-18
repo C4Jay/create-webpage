@@ -1,5 +1,10 @@
+/* Roboto import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Poppins import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     /* background-image: url("/assets/imgs/header_bg.svg"); */
 }
 
@@ -7,6 +12,30 @@ body {
     height: 100px;
     width: 100px;
 } */
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    color: #7E7E7E;
+}
 
 ul {
     list-style-type: none;
@@ -55,13 +84,11 @@ li.banner-list-items {
     background-color: white;
 }
 
-ul.tab-content-list {
-    list-style-type: circle !important;
-}
 
 .main-banner {
+    margin-bottom: 45px;
     /* background-image: url("assets/imgs/header_bg.svg"); */
-    
+
 }
 
 .get-started-btn {
@@ -70,26 +97,55 @@ ul.tab-content-list {
     height: 45px;
     width: 60%;
     border: none;
-    border-radius: 5px
+    border-radius: 5px;
+    margin-top: 40px;
 }
 
-.get-started-btn:hover, .sign-up:hover {
-    background-color:#EDB013;
-    transition: 0.6s linear;
+/* sign up btn and banner Get Started btn hover */
+.get-started-btn:hover,
+.sign-up:hover {
+    background-color: #EDB013;
+    transition: 0.4s linear;
 }
 
 .text-center {
     text-align: center;
 }
 
+/* customers logos row */
+.customers-row {
+    margin-bottom: 70px;
+}
+
 /* vertical tabs */
 /* Style the tab */
+.row.tab-row {
+    margin-bottom: 100px;
+}
+
 .tab {
     float: left;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border: 1px solid #64C5B4;
+    border-radius: 2px;
     width: 30%;
-    height: 460px;
+    height: auto;
+    /* background-color: #f1f1f1; */
+    /* height: 460px; */
+}
+
+.tablinks {
+    width: 104% !important;
+}
+
+/* tab buttons active */
+.tablinks.active {
+    background-color: white !important;
+    border-right: 10px solid #64C5B4;
+}
+
+/* tab buttons text */
+.tablinks p {
+    padding-right: 25px;
 }
 
 /* Style the buttons inside the tab */
@@ -97,39 +153,75 @@ ul.tab-content-list {
     display: block;
     background-color: inherit;
     color: black;
-    padding: 22px 16px;
+    padding: 22px 0px;
     width: 100%;
     border: none;
     outline: none;
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 14px;
+    border-bottom: 1px solid #64C5B4;
+    margin-left: -12px;
+    width: 107% !important;
+    padding-left: 10px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
+@media only screen and (max-width: 1399px) {
+    .tab button {
+        width: 108% !important;
+    }
 }
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-    background-color: #ccc;
+@media only screen and (max-width: 1200px) {
+    .tab button {
+        width: 109% !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .tab button {
+        width: 113% !important;
+    }
+}
+
+/* last button no bottom border */
+.tab button:nth-of-type(3) {
+    border-bottom: none !important;
 }
 
 /* Style the tab content */
 .tabcontent {
     float: left;
-    padding: 0px 12px;
+    padding: 0px 30px;
     border: 1px solid #ccc;
     width: 70%;
     border-left: none;
-    height: 460px;
+    height: auto;
+    animation: fadeIn 1s;
+    /* height: 460px; */
 }
+
+ul.tab-content-list {
+    list-style-type: disc !important;
+    overflow: visible !important;
+}
+
+.tab-content-list li {
+    font-size: 14px;
+    color: #7E7E7E;
+}
+
+.list-title {
+    color: #04263D !important;
+}
+
+/* card styling */
 
 .card {
     height: 500px;
-    width: min-content; /* need to check */
+    width: min-content;
+    /* need to check */
     text-align: initial;
 }
 
@@ -148,7 +240,7 @@ ul.tab-content-list {
 }
 
 .card .get-started-btn:hover {
-    background-color:#0B64A0;
+    background-color: #0B64A0;
     transition: 0.6s linear;
 }
 
@@ -212,5 +304,16 @@ ul.tab-content-list {
 @keyframes spin {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/* tab content animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
