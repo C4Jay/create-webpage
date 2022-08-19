@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     /* background-image: url("/assets/imgs/header_bg.svg"); */
 }
@@ -256,6 +256,7 @@ ul.tab-content-list {
     width: min-content;
     /* need to check */
     text-align: initial;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card img {
@@ -291,6 +292,11 @@ ul.tab-content-list {
     padding-top: 260px;
     width: 100vw;
     padding-bottom: 80px;
+}
+
+.footer-main, .footer-main a {
+    color: #7E7E7E;
+    text-decoration: none;
 }
 
 .footer-logo {
