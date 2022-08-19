@@ -71,6 +71,21 @@ li a:hover {
     border: none;
     border-radius: 4px;
     color: white;
+    /*  */
+    /* background-color: #64C5B4;
+    color: white;
+    height: 45px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px; */
+    position: relative;
+    display: inline-block;
+    background-image: linear-gradient(#EDB013, #EDB013);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
 }
 
 /* background svg 1 */
@@ -112,13 +127,19 @@ li.banner-list-items {
     border: none;
     border-radius: 5px;
     margin-top: 40px;
+    position: relative;
+    display: inline-block;
+    background-image: linear-gradient(#EDB013, #EDB013);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
 }
 
 /* sign up btn and banner Get Started btn hover */
 .get-started-btn:hover,
 .sign-up:hover {
-    background-color: #EDB013;
-    transition: 0.4s linear;
+    background-size: 100% 100%;
 }
 
 .text-center {
@@ -238,11 +259,11 @@ ul.tab-content-list {
 }
 
 .tabcontent .coming-soon {
-    color:  #AAAAAA !important;
+    color: #AAAAAA !important;
 }
 
 .coming-soon .list-title {
-    color:  #AAAAAA !important;
+    color: #AAAAAA !important;
 }
 
 .list-title {
@@ -271,11 +292,11 @@ ul.tab-content-list {
 .card .get-started-btn {
     background-color: #04263D;
     text-align: center;
+    background-image: linear-gradient(#0B64A0, #0B64A0);
 }
 
 .card .get-started-btn:hover {
-    background-color: #0B64A0;
-    transition: 0.6s linear;
+    background-size: 100% 100%;
 }
 
 /* footer */
@@ -294,7 +315,8 @@ ul.tab-content-list {
     padding-bottom: 80px;
 }
 
-.footer-main, .footer-main a {
+.footer-main,
+.footer-main a {
     color: #7E7E7E;
     text-decoration: none;
 }
@@ -377,9 +399,10 @@ ul.tab-content-list {
 
 @keyframes slideFromBottom {
     0% {
-      margin-top: 23%;
+        margin-top: 23%;
     }
+
     100% {
-      margin-top: 0;
+        margin-top: 0;
     }
-  }
+}
