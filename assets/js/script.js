@@ -18,3 +18,16 @@ function codeOnLoad() {
   document.getElementById('Three').style.display = 'none';
 }
 window.onload = codeOnLoad
+
+
+// 
+
+/* hamburger menu toggle */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

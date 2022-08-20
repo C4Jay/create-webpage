@@ -25,6 +25,7 @@ h1,
 h2,
 h3 {
     font-family: 'Poppins', sans-serif;
+    color: #04263D;
 }
 
 p {
@@ -38,6 +39,67 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: white;
+}
+
+/* top nav */
+
+/* Style the navigation menu */
+
+@media only screen and (max-width: 768px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .hamburg-bar {
+        width: 35px;
+        height: 5px;
+        background-color: #04263D;
+        margin: 6px 0;
+    }
+
+    .topnav {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    /* navigation menu links */
+    .topnav a {
+        color: #04263D;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        margin-right: -14px;
+        margin-top: -10px;
+    }
+
+    /* hamburger menu */
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.3s;
+    }
+
+    .topnav a:hover {
+        color: black;
+    }
+
+    /* active link */
+    .active {
+        color: #04AA6D !important;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .topnav {
+        display: none;
+    }
 }
 
 .nav-item {
