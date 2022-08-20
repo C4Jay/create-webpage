@@ -1,0 +1,8 @@
+Tested only on Chrome browser Version 104.0.5112.102 and Microsoft Edge Version 104.0.1293.63
+
+All assets used are from the provided Assets google folder and included in "assets" folder in the project root and imported within index.html
+
+Animations for animation_vector.svg are written in style.css file and the style.css file is imported within the svg file.
+( ! Replacing the svg file in this projects assets/imgs will break the animations )
+
+Vertical Tabs component is written with Javascript.

@@ -6,13 +6,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    /* background-image: url("/assets/imgs/header_bg.svg"); */
 }
-
-/* .logo {
-    height: 100px;
-    width: 100px;
-} */
 
 h1 {
     font-size: 45px;
@@ -58,10 +52,6 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    /* background-color: #111; */
-}
-
 .active-menu-item {
     border-bottom: 5px solid #64C5B4;
 }
@@ -71,14 +61,6 @@ li a:hover {
     border: none;
     border-radius: 4px;
     color: white;
-    /*  */
-    /* background-color: #64C5B4;
-    color: white;
-    height: 45px;
-    width: 60%;
-    border: none;
-    border-radius: 5px;
-    margin-top: 40px; */
     position: relative;
     display: inline-block;
     background-image: linear-gradient(#EDB013, #EDB013);
@@ -96,6 +78,7 @@ img.bg-img-1 {
     z-index: -1;
 }
 
+/* banner section items list */
 .banner-list {
     display: flex;
     align-items: center;
@@ -115,10 +98,10 @@ li.banner-list-items {
 
 .main-banner {
     margin-bottom: 45px;
-    /* background-image: url("assets/imgs/header_bg.svg"); */
 
 }
 
+/* Get Started button */
 .get-started-btn {
     background-color: #64C5B4;
     color: white;
@@ -146,15 +129,34 @@ li.banner-list-items {
     text-align: center;
 }
 
+/* banner img svg */
+@media only screen and (max-width: 1024px) {
+    .banner-img {
+        max-width: 84vw;
+    }
+}
+
 /* customers logos row */
 .customers-row {
     margin-bottom: 70px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .customers-img {
+        max-width: 70vw;
+    }
+}
+
 /* vertical tabs */
-/* Style the tab */
 .row.tab-row {
     margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .row.tab-row {
+        max-width: 96vw;
+        padding-left: inherit;
+    }
 }
 
 .tab {
@@ -163,8 +165,6 @@ li.banner-list-items {
     border-radius: 2px;
     width: 30%;
     height: auto;
-    /* background-color: #f1f1f1; */
-    /* height: 460px; */
 }
 
 .tablinks {
@@ -202,6 +202,7 @@ li.banner-list-items {
     padding-left: 30px;
 }
 
+/* media queries for tab */
 @media only screen and (max-width: 1399px) {
     .tab button {
         width: 108% !important;
@@ -231,7 +232,7 @@ li.banner-list-items {
     border-bottom: none !important;
 }
 
-/* Style the tab content */
+/* tab content */
 .tabcontent {
     float: left;
     padding: 0px 30px;
@@ -240,8 +241,6 @@ li.banner-list-items {
     border-left: none;
     height: auto;
     line-height: 25px !important;
-    /* animation: fadeIn 1s; */
-    /* height: 460px; */
 }
 
 .tabcontent .desc {
@@ -271,11 +270,9 @@ ul.tab-content-list {
 }
 
 /* card styling */
-
 .card {
     height: 500px;
     width: min-content;
-    /* need to check */
     text-align: initial;
     font-family: 'Roboto', sans-serif;
 }
@@ -300,7 +297,6 @@ ul.tab-content-list {
 }
 
 /* footer */
-
 .footer {
     background: #F5F8FE;
     clip-path: polygon(0 62%, 100% 0, 100% 100%, 0% 100%);
@@ -328,9 +324,6 @@ ul.tab-content-list {
 /* banner svg animations */
 #wheel-gear,
 #wheel-gear-small {
-    /* animation: wheel 1s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box; */
     animation: spin 1s linear infinite;
     transform-origin: center;
     transform-box: fill-box;
@@ -348,8 +341,7 @@ ul.tab-content-list {
     animation: upDown 1.3s infinite alternate;
 }
 
-/* animation key frames */
-
+/* animations key frames */
 @keyframes wheel {
     from {
         transform: rotateZ(0deg);
@@ -385,17 +377,6 @@ ul.tab-content-list {
         transform: rotate(360deg);
     }
 }
-
-/* tab content animation */
-/* @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-} */
 
 @keyframes slideFromBottom {
     0% {
